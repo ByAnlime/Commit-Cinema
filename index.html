@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commit Cinema - Especial Noche de Halloween</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         CABECERA / NAVBAR
+         ====================================================================== -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <span class="logo-icon">🦇</span>
+                <div class="logo-text">
+                    <h1>Commit Cinema</h1>
+                    <span class="tagline">Cartelera de Terror</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#cartelera" class="active">Cartelera</a></li>
+                    <li><a href="#promociones">Snacks Terroríficos</a></li>
+                    <li><a href="#contacto">Horarios</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme-badge">
+                <span>🎃</span>
+                <span>Temporada Halloween</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         HERO BANNER - EDICIÓN HALLOWEEN
+         ====================================================================== -->
+    <section class="hero-banner">
+        <div class="container hero-content">
+            <div class="hero-decorations">🕷️ 🎃 👻 🕸️ 🦇</div>
+            <p class="hero-subtitle">Ciclo Especial Spooky Night</p>
+            <h2 class="hero-title">Semana del Terror en Commit Cinema</h2>
+            <p class="hero-description">
+                Sobrevive a las noches más oscuras con nuestra selección de clásicos del cine de miedo.
+                ¡Ven disfrazado a nuestras sesiones golfas y llévate unas palomitas embrujadas gratis!
+            </p>
+            <a href="#cartelera" class="btn-primary">Ver Películas de Miedo</a>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         CARTELERA DE PELÍCULAS (HALLOWEEN)
+         ====================================================================== -->
+    <main class="container cartelera-section" id="cartelera">
+        <h3 class="section-title">En Pantalla Esta Semana</h3>
+        <p class="section-desc">Selecciona tu película favorita y reserva tus butacas antes de que se agoten.</p>
+
+        <div class="movies-grid">
+
+            <!-- Película 1: Pesadilla en Elm Street -->
+            <article class="movie-card" data-id="1">
+                <div class="movie-poster-wrap">
+                    <img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=600&q=80" 
+                         alt="Pesadilla en Elm Street" loading="lazy">
+                    <span class="tag-badge">Clásico Terror</span>
+                </div>
+                <div class="movie-info">
+                    <h4 class="movie-title">Pesadilla en Elm Street</h4>
+                    <div class="movie-meta">
+                        <span>⏱ 91 min</span>
+                        <span>🔞 +18</span>
+                        <span>⭐ 4.8</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        Varios jóvenes de una pequeña localidad tienen pesadillas recurrentes en las que son perseguidos por un hombre con garras de acero.
+                    </p>
+                    <div class="movie-sessions">
+                        <span class="sessions-label">Sesiones disponibles:</span>
+                        <div class="session-chips">
+                            <button class="chip">18:00</button>
+                            <button class="chip">20:30</button>
+                            <button class="chip">23:00</button>
+                        </div>
+                        <button class="btn-ticket">Reservar Entrada</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Película 2: Scream: Noche de Máscaras -->
+            <article class="movie-card" data-id="2">
+                <div class="movie-poster-wrap">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" 
+                         alt="Scream: Noche de Máscaras" loading="lazy">
+                    <span class="tag-badge">Slasher</span>
+                </div>
+                <div class="movie-info">
+                    <h4 class="movie-title">Scream: Noche de Máscaras</h4>
+                    <div class="movie-meta">
+                        <span>⏱ 111 min</span>
+                        <span>🔞 +16</span>
+                        <span>⭐ 4.6</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        Un asesino enmascarado acecha a un grupo de estudiantes de secundaria utilizando llamadas telefónicas y trivias de películas de miedo.
+                    </p>
+                    <div class="movie-sessions">
+                        <span class="sessions-label">Sesiones disponibles:</span>
+                        <div class="session-chips">
+                            <button class="chip">17:30</button>
+                            <button class="chip">20:00</button>
+                            <button class="chip">22:45</button>
+                        </div>
+                        <button class="btn-ticket">Reservar Entrada</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Película 3: El Resplandor -->
+            <article class="movie-card" data-id="3">
+                <div class="movie-poster-wrap">
+                    <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" 
+                         alt="El Resplandor" loading="lazy">
+                    <span class="tag-badge">Psicológico</span>
+                </div>
+                <div class="movie-info">
+                    <h4 class="movie-title">El Resplandor</h4>
+                    <div class="movie-meta">
+                        <span>⏱ 146 min</span>
+                        <span>🔞 +18</span>
+                        <span>⭐ 4.9</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        Un escritor y su familia se trasladan a un aislado hotel en las montañas durante el crudo invierno, donde fuerzas siniestras acechan.
+                    </p>
+                    <div class="movie-sessions">
+                        <span class="sessions-label">Sesiones disponibles:</span>
+                        <div class="session-chips">
+                            <button class="chip">19:00</button>
+                            <button class="chip">22:15</button>
+                        </div>
+                        <button class="btn-ticket">Reservar Entrada</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Película 4: La Novia Cadáver -->
+            <article class="movie-card" data-id="4">
+                <div class="movie-poster-wrap">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80" 
+                         alt="La Novia Cadáver" loading="lazy">
+                    <span class="tag-badge">Animación / Familiar</span>
+                </div>
+                <div class="movie-info">
+                    <h4 class="movie-title">La Novia Cadáver</h4>
+                    <div class="movie-meta">
+                        <span>⏱ 77 min</span>
+                        <span>👶 Todos los públicos</span>
+                        <span>⭐ 4.7</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        En una pequeña aldea europea del siglo XIX, un joven tímido es llevado por error al inframundo para desposarse con una misteriosa novia.
+                    </p>
+                    <div class="movie-sessions">
+                        <span class="sessions-label">Sesiones disponibles:</span>
+                        <div class="session-chips">
+                            <button class="chip">16:30</button>
+                            <button class="chip">18:45</button>
+                            <button class="chip">21:00</button>
+                        </div>
+                        <button class="btn-ticket">Reservar Entrada</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Película 5: Hocus Pocus: El Retorno -->
+            <article class="movie-card" data-id="5">
+                <div class="movie-poster-wrap">
+                    <img src="https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?auto=format&fit=crop&w=600&q=80" 
+                         alt="Hocus Pocus" loading="lazy">
+                    <span class="tag-badge">Comedia Fantástica</span>
+                </div>
+                <div class="movie-info">
+                    <h4 class="movie-title">Hocus Pocus (El Retorno de las Brujas)</h4>
+                    <div class="movie-meta">
+                        <span>⏱ 96 min</span>
+                        <span>👶 Todos los públicos</span>
+                        <span>⭐ 4.5</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        Tres brujas del siglo XVII son resucitadas accidentalmente durante la noche de Halloween en Salem por unos adolescentes curiosos.
+                    </p>
+                    <div class="movie-sessions">
+                        <span class="sessions-label">Sesiones disponibles:</span>
+                        <div class="session-chips">
+                            <button class="chip">16:00</button>
+                            <button class="chip">18:15</button>
+                            <button class="chip">20:30</button>
+                        </div>
+                        <button class="btn-ticket">Reservar Entrada</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Película 6: Alien: El Octavo Pasajero -->
+            <article class="movie-card" data-id="6">
+                <div class="movie-poster-wrap">
+                    <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=600&q=80" 
+                         alt="Alien" loading="lazy">
+                    <span class="tag-badge">Sci-Fi Horror</span>
+                </div>
+                <div class="movie-info">
+                    <h4 class="movie-title">Alien: El Octavo Pasajero</h4>
+                    <div class="movie-meta">
+                        <span>⏱ 117 min</span>
+                        <span>🔞 +16</span>
+                        <span>⭐ 4.9</span>
+                    </div>
+                    <p class="movie-synopsis">
+                        La tripulación de la nave espacial Nostromo intercepta una señal de socorro desde un planeta desolado, despertando una pesadilla alienígena.
+                    </p>
+                    <div class="movie-sessions">
+                        <span class="sessions-label">Sesiones disponibles:</span>
+                        <div class="session-chips">
+                            <button class="chip">19:30</button>
+                            <button class="chip">22:00</button>
+                        </div>
+                        <button class="btn-ticket">Reservar Entrada</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- ======================================================================
+         SECCIÓN SNACKS Y PROMOCIONES (HALLOWEEN)
+         ====================================================================== -->
+    <section class="promos-section" id="promociones">
+        <div class="container">
+            <h3 class="section-title">Bar de Snacks Tenebrosos</h3>
+            <p class="section-desc">Combos exclusivos disponibles solo durante la temporada de Halloween</p>
+
+            <div class="promos-grid">
+                <div class="promo-card">
+                    <div class="promo-icon">🍿</div>
+                    <div class="promo-info">
+                        <h4>Combo Truco o Trato</h4>
+                        <p>Palomitas gigantes con caramelo sangriento + 2 refrescos medianos + calavera sorpresa de golosinas.</p>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <div class="promo-icon">🧪</div>
+                    <div class="promo-info">
+                        <h4>Pócima de la Bruja</h4>
+                        <p>Bebida energética efervescente con sabor a manzana ácida y efecto humo ectoplasmático comestible.</p>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <div class="promo-icon">🍬</div>
+                    <div class="promo-info">
+                        <h4>Gusanos del Pantano</h4>
+                        <p>Caja gigante de gomitas ácidas con formas monstruosas. ¡El complemento perfecto para los sustos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         PIE DE PÁGINA (FOOTER)
+         ====================================================================== -->
+    <footer class="main-footer" id="contacto">
+        <div class="container">
+            <div class="footer-decorations">🎃 🦇 👻 🕯️ 💀</div>
+            <p><strong>Commit Cinema S.L.</strong> — Tu cine de confianza en cada temporada.</p>
+            <p>Campaña de Halloween activa hasta el 5 de Noviembre. Próxima actualización: Campaña Navideña.</p>
+            <p class="footer-credits">Práctica de GIT - Ingeniería de Software · Universidad de Cádiz</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript interactivo -->
+    <script src="js/main.js"></script>
+</body>
+</html>

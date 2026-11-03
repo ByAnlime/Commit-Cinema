@@ -1,0 +1,435 @@
+/* ==========================================================================
+   COMMIT CINEMA - HOJA DE ESTILOS (VERSIÓN HALLOWEEN)
+   ========================================================================== */
+
+/* Variables de tema: Estética Halloween (Naranjas, morados y negros) */
+:root {
+    --bg-main: #0c0910;
+    --bg-card: #181324;
+    --bg-card-hover: #221b33;
+    --header-bg: rgba(14, 11, 20, 0.95);
+    
+    /* Colores temáticos de Halloween */
+    --theme-color-primary: #ff6f00;      /* Naranja calabaza */
+    --theme-color-secondary: #9c27b0;    /* Morado oscuro bruja */
+    --theme-color-accent: #00e676;       /* Verde ectoplasma */
+    --theme-color-blood: #d50000;        /* Rojo sangre */
+    
+    --text-primary: #f5f5f7;
+    --text-secondary: #b3adc2;
+    --border-color: #2e2640;
+    
+    --glow-effect: 0 0 15px rgba(255, 111, 0, 0.4);
+    --font-heading: 'Cinzel', 'Georgia', serif;
+    --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Cabecera y Navegación
+   -------------------------------------------------------------------------- */
+.main-header {
+    background-color: var(--header-bg);
+    border-bottom: 2px solid var(--theme-color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 0 8px var(--theme-color-primary));
+}
+
+.logo-text h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.logo-text .tagline {
+    font-size: 0.8rem;
+    color: var(--theme-color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--theme-color-primary);
+    text-shadow: 0 0 10px rgba(255, 111, 0, 0.6);
+}
+
+.theme-badge {
+    background: linear-gradient(135deg, var(--theme-color-secondary), var(--theme-color-primary));
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: var(--glow-effect);
+}
+
+/* --------------------------------------------------------------------------
+   Hero / Banner Principal Halloween
+   -------------------------------------------------------------------------- */
+.hero-banner {
+    position: relative;
+    background: radial-gradient(circle at center, #2e1a47 0%, #0c0910 80%);
+    padding: 80px 20px 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-subtitle {
+    color: var(--theme-color-accent);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 111, 0, 0.7);
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+}
+
+.hero-decorations {
+    font-size: 1.8rem;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.08); opacity: 1; }
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--theme-color-primary);
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 111, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: #ffa040;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 111, 0, 0.7);
+}
+
+/* --------------------------------------------------------------------------
+   Sección Cartelera (Movies Grid)
+   -------------------------------------------------------------------------- */
+.cartelera-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.movie-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--theme-color-primary);
+    box-shadow: 0 10px 25px rgba(255, 111, 0, 0.25);
+    background-color: var(--bg-card-hover);
+}
+
+.movie-poster-wrap {
+    position: relative;
+    height: 380px;
+    background-color: #120e1c;
+    overflow: hidden;
+}
+
+.movie-poster-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.movie-card:hover .movie-poster-wrap img {
+    transform: scale(1.05);
+}
+
+.tag-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--theme-color-accent);
+    border: 1px solid var(--theme-color-accent);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.movie-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.movie-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+.movie-synopsis {
+    font-size: 0.9rem;
+    color: #d1cbdc;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.movie-sessions {
+    margin-top: auto;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 15px;
+}
+
+.sessions-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.session-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.chip {
+    background-color: #28213b;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background-color: var(--theme-color-primary);
+    color: #000;
+    border-color: var(--theme-color-primary);
+}
+
+.btn-ticket {
+    width: 100%;
+    background-color: transparent;
+    color: var(--theme-color-primary);
+    border: 1px solid var(--theme-color-primary);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-ticket:hover {
+    background-color: var(--theme-color-primary);
+    color: #000000;
+}
+
+/* --------------------------------------------------------------------------
+   Sección Promociones / Bar de Snacks
+   -------------------------------------------------------------------------- */
+.promos-section {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 60px 0;
+}
+
+.promos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.promo-card {
+    background: linear-gradient(145deg, #1d172c, #130f1e);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.promo-icon {
+    font-size: 2.8rem;
+}
+
+.promo-info h4 {
+    color: var(--theme-color-primary);
+    margin-bottom: 6px;
+    font-size: 1.15rem;
+}
+
+.promo-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Pie de Página (Footer)
+   -------------------------------------------------------------------------- */
+.main-footer {
+    background-color: #08060b;
+    border-top: 2px solid var(--border-color);
+    padding: 40px 0 20px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-decorations {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.footer-credits {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #6d677d;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
